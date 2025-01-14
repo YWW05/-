@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Icons</title>
+</head>
+<body>
+    <canvas id="canvas16" width="16" height="16"></canvas>
+    <canvas id="canvas48" width="48" height="48"></canvas>
+    <canvas id="canvas128" width="128" height="128"></canvas>
+    
+    <script>
+        function drawIcon(canvas) {
+            const ctx = canvas.getContext('2d');
+            const size = canvas.width;
+            
+            // 背景
+            ctx.fillStyle = '#4CAF50';
+            ctx.fillRect(0, 0, size, size);
+            
+            // 时钟外圈
+            ctx.beginPath();
+            ctx.arc(size/2, size/2, size*0.4, 0, Math.PI * 2);
+            ctx.strokeStyle = 'white';
+            ctx.lineWidth = size*0.1;
+            ctx.stroke();
+            
+            // 时钟指针
+            ctx.beginPath();
+            ctx.moveTo(size/2, size/2);
+            ctx.lineTo(size/2 + size*0.2, size/2);
+            ctx.strokeStyle = 'white';
+            ctx.lineWidth = size*0.08;
+            ctx.stroke();
+            
+            // 将canvas转换为图片
+            const link = document.createElement('a');
+            link.download = `icon${size}.png`;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+        
+        // 生成三种尺寸的图标
+        drawIcon(document.getElementById('canvas16'));
+        drawIcon(document.getElementById('canvas48'));
+        drawIcon(document.getElementById('canvas128'));
+    </script>
+</body>
+</html> 

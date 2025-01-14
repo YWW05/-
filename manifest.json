@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "看看下班没",
+  "version": "1.0",
+  "description": "显示工作时间进度和随机诗词的浏览器插件",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage",
+    "http://timor.tech/"
+  ],
+  "host_permissions": [
+    "http://timor.tech/*"
+  ]
+} 

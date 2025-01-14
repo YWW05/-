@@ -1,0 +1,269 @@
+.container {
+  width: 300px;
+  padding: 15px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5em;
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.time-display {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4CAF50;
+  transition: width 0.3s ease;
+}
+
+.settings {
+  margin-top: 15px;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.settings input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.break-settings {
+  margin: 10px 0;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* 诗词样式 */
+.poetry-container {
+  margin-top: 15px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 4px;
+  border-top: 2px solid #4CAF50;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: inline-block;
+  width: 80px;
+  margin-right: 10px;
+}
+
+.form-group input {
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.save-btn {
+  padding: 6px 12px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: #45a049;
+}
+
+.time-info {
+  margin: 15px 0;
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.work-status {
+  margin: 15px 0;
+}
+
+.progress-container {
+  width: 100%;
+  height: 20px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #4CAF50;
+  transition: width 0.3s ease;
+}
+
+#progress-text {
+  margin-top: 5px;
+  text-align: center;
+  color: #666;
+}
+
+#earnings-info {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+}
+
+.settings {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: inline-block;
+  width: 120px;
+  margin-right: 10px;
+}
+
+.form-group input[type="number"],
+.form-group input[type="time"] {
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.save-btn {
+  width: 100%;
+  padding: 8px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: #45a049;
+}
+
+/* 插件标题样式 */
+.plugin-title {
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.plugin-title h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 修改复制按钮样式 */
+.copy-btn {
+  position: static; /* 改为静态定位 */
+  display: block;
+  margin: 8px auto 0;
+  padding: 3px 8px;
+  font-size: 12px;
+  color: #666;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.copy-btn:hover {
+  opacity: 1;
+  background: #f0f0f0;
+}
+
+/* 添加设置切换按钮样式 */
+.settings-toggle {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 15px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #666;
+  font-size: 12px;
+}
+
+.settings-toggle:hover {
+  background: #e0e0e0;
+}
+
+/* 添加分隔线样式 */
+.divider {
+  margin: 15px 0;
+  border-top: 1px solid #eee;
+}
+
+.poetry {
+  font-family: "SimHei", "黑体", sans-serif;
+  text-align: center;
+  color: #333;
+  line-height: 1.6;
+  font-size: 1.1em;
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+.poetry-author {
+  font-family: "SimHei", "黑体", sans-serif;
+  text-align: right;
+  color: #666;
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+/* 复制按钮样式微调 */
+.copy-btn {
+  margin: 5px auto;
+  padding: 3px 8px;
+  font-size: 12px;
+} 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 插件标题 -->
+    <div class="plugin-title">
+      <h1>看看下班没</h1>
+    </div>
+
+    <!-- 时间信息显示部分 -->
+    <div class="time-info">
+      <div id="current-datetime"></div>
+      <div id="weekend-countdown"></div>
+    </div>
+
+    <!-- 工作进度部分 -->
+    <div class="work-status">
+      <div class="progress-container">
+        <div id="work-progress" class="progress-bar"></div>
+      </div>
+      <div id="progress-text"></div>
+      <div id="earnings-info">
+        <span id="hourly-rate"></span>
+        <span id="current-earnings"></span>
+      </div>
+    </div>
+
+    <!-- 设置切换按钮和设置面板 -->
+    <button class="settings-toggle" id="settingsToggle">显示设置</button>
+    <div class="settings" id="settingsPanel" style="display: none;">
+      <form id="settings-form">
+        <div class="form-group">
+          <label for="monthSalary">月薪(元):</label>
+          <input type="number" id="monthSalary" required>
+        </div>
+        <div class="form-group">
+          <label for="workDaysPerMonth">每月工作天数:</label>
+          <input type="number" id="workDaysPerMonth" required>
+        </div>
+        <div class="form-group">
+          <label for="workStartTime">上班时间:</label>
+          <input type="time" id="workStartTime" required>
+        </div>
+        <div class="form-group">
+          <label for="workEndTime">下班时间:</label>
+          <input type="time" id="workEndTime" required>
+        </div>
+        <div class="form-group">
+          <label for="hasLunchBreak">是否有午休:</label>
+          <input type="checkbox" id="hasLunchBreak">
+        </div>
+        <div id="lunchBreakTimes" style="display: none;">
+          <div class="form-group">
+            <label for="lunchStartTime">午休开始时间:</label>
+            <input type="time" id="lunchStartTime">
+          </div>
+          <div class="form-group">
+            <label for="lunchEndTime">午休结束时间:</label>
+            <input type="time" id="lunchEndTime">
+          </div>
+        </div>
+        <button type="submit" class="save-btn">保存设置</button>
+      </form>
+    </div>
+
+    <!-- 分隔线 -->
+    <div class="divider"></div>
+
+    <!-- 诗词部分移到底部 -->
+    <div class="poetry-container">
+      <div class="poetry-loading">正在加载诗词...</div>
+      <div class="poetry"></div>
+      <div class="poetry-author"></div>
+      <button class="copy-btn">复制</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
